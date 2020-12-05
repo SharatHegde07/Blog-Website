@@ -1,0 +1,4 @@
+.form-control {
+    position:relative;
+    z-index: 999; /* giving this a high number is the equivalent of using "Send to Front" in PhotoShop */
+}
