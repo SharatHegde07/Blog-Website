@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css'
+import './css/About.css'
 
 
 function About() {
@@ -12,25 +12,33 @@ function About() {
           
         
       <div className="first">
-       <span className='font1'>Name</span>
+       <span className='font1'>
+         SHREYA 
+         PES1UG19CS463
+         SECTION - G
+            SEM-3</span>
         </div>
 
         <div className="second">
-       <span className='font2'>Student......etc</span>
+       <span className='font2'>SHARATH 
+         PES1UG19CS451
+         SECTION - G
+            SEM-3</span>
         </div>
 
         <div className="third">
-       <span className='font3'>Bangalore......</span>
+       <span className='font3'>SARTHAK 
+         PES1UG19CS433
+         SECTION - G
+            SEM-3</span>
         </div>
 
         <div className="fourth">
-       <span className='font4'>BIO</span>
         </div>
          
           </div>
           </div>
 
-      
       
       </div>
       </div>

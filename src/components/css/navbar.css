@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+.font{
+    font-size: 20px;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffbc00;
+    font-family: 'Goldman', cursive;
+}

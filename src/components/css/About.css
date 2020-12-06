@@ -4,6 +4,7 @@
     font-family:'Poppins',sans-serif;
    
 }
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .container{
     font-style:italic bold;
@@ -38,7 +39,7 @@
 
 
 .div-header{
-    width: 80%;
+    width: 100%;
     margin:0 auto;
     display:flex;
     display: flex;
@@ -83,6 +84,9 @@
       transform: translate(-50%,-50%);
       box-sizing: border-box;
     padding: 70px 30px;
+    padding-left: 5em;
+    font-size: 11px;
+    font-family: 'Anton', sans-serif;
     border: 3px solid black;
   }
   
@@ -94,11 +98,17 @@
     background-image: url('https://i.pinimg.com/originals/a2/04/0e/a2040ebda73d0a603c42bf12e80b4f16.jpg');
      color:black;
       top:60%;
+      
+
       left: 30%;
+      font-size: 11px;
+
       position: absolute;
       transform: translate(-50%,-50%);
       box-sizing: border-box;
     padding: 70px 30px;
+    padding-left: 5em;
+
     border: 3px solid black;
   }
 
@@ -110,6 +120,9 @@
     background-image: url('https://i.pinimg.com/originals/a2/04/0e/a2040ebda73d0a603c42bf12e80b4f16.jpg');
      color:black;
       top:20%;
+      font-size: 11px;
+      padding-left: 5em;
+
       left: 55%;
       position: absolute;
       transform: translate(-50%,-50%);
@@ -120,10 +133,10 @@
 
   .fourth {
     width:220px;
-    height: 150px;
+    height: 225px;
     background-size:cover;
     background-position: relative;
-    background-image: url('https://i.pinimg.com/originals/a2/04/0e/a2040ebda73d0a603c42bf12e80b4f16.jpg');
+    background-image: url('https://i.ibb.co/1Rb9Q0N/download-1.jpg');
     color:black;
     top:60%;
     left: 80%;
@@ -131,6 +144,10 @@
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
+    padding-left: 85  px;
+    align-items: center;
+   
+
     border: 3px solid black;
   }
 

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-
+import "./css/CreateAcc.css"
+import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -21,7 +23,7 @@ const formValid = ({ formErrors, ...rest }) => {
   return valid;
 };
 
-class App extends Component {
+class CreateAcc extends Component {
   constructor(props) {
     super(props);
 
@@ -53,6 +55,18 @@ class App extends Component {
     } else {
       console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
     }
+
+
+    axios.post('http://localhost:5002/users/register',{
+      firstname: this.state.firstName,
+      lastname: this.state.lastName,
+      email: this.state.email,
+      password: this.state.password
+
+    })
+    .then((res) => console.log(res))
+    .catch(err => console.log(err));
+    window.location='/login';
   };
 
   handleChange = e => {
@@ -82,7 +96,9 @@ class App extends Component {
         break;
     }
 
-    this.setState({ formErrors, [name]: value }, () => console.log(this.state));
+    this.setState({ formErrors, [name]: value }, () => { if(!this.state.password) console.log(this.state)});
+
+   
   };
 
   render() {
@@ -135,8 +151,8 @@ class App extends Component {
                 <span className="errorMessage">{formErrors.email}</span>
               )}
             </div>
-            <br/>
-            <div className="password"><br/><br/>
+            
+            <div className="password">
               <label htmlFor="password">Password</label>
               <input
                 className={formErrors.password.length > 0 ? "error" : null}
@@ -150,10 +166,10 @@ class App extends Component {
                 <span className="errorMessage">{formErrors.password}</span>
               )}
             </div>
-            <br/><br/><br/><br/><br/>
+            <br/><br/>
             <div className="createAccount">
               <button type="submit">Create Account</button>
-              <small>Already Have an Account?</small>
+              <small><Link to="/login">Already Have an Account?</Link></small>
             </div>
           </form>
         </div>
@@ -162,4 +178,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default CreateAcc;

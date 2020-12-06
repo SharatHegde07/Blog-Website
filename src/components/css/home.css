@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+.card-body{
+    font-family: 'Courier Prime', monospace;
+}
+a{
+    font-size: 8px;
+}
+.limit{
+    font-family: monospace;
+    width: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  p{
+      width: 10px;
+  }
+  *{
+      background-color: #fde396;
+  }
+  .A{
+    margin: 10% 40%;
+  }
+  .read-more-link{
+    color: blueviolet;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .extra-content{
+    color: cornflowerblue;
+    font-weight: 500;
+  }
+  
