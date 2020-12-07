@@ -3,6 +3,7 @@ import './css/login.css'
 import {Link} from 'react-router-dom'
 //import CreateAcc from './CreateAcc';
 import axios from 'axios';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class Login extends React.Component {
     state = { 
@@ -45,6 +46,7 @@ class Login extends React.Component {
     render() { 
         return ( 
             <div className="wrapper">
+             <div className = "btn-danger">{this.state.error}</div>
             <div className="form-wrapper container">
               <h1>Log In</h1>
               <form onSubmit={this.handleSubmit} noValidate>
@@ -80,7 +82,7 @@ class Login extends React.Component {
               </form>
             </div>
             
-            <div>alert({this.state.error})</div>
+           
           </div>
            
          );
